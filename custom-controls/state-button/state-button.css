@@ -1,0 +1,24 @@
+/* ### STATE BUTTON ### */
+
+.state-button {
+	background-color: #e0e0e0;
+	border-radius: 16px;
+	width: 48px;
+	height: 32px;
+	cursor: pointer;
+}
+
+.state-button .switch {
+	display: inline-block;
+	background-color: #b0b0b0;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	transition: all .2s ease-in-out;
+}
+
+.state-button.selected .switch {
+	background-color: #26a0da;
+	transform: translateX(16px);
+}
+

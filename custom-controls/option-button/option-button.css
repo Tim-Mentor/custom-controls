@@ -1,0 +1,32 @@
+/* ### OPTION BUTTONS ### */
+
+.optionset {
+	border: 1px solid #d0d0d0;
+	padding: 8px 24px;
+}
+
+.option-item {
+	margin: 4px 0;
+	cursor: pointer;
+	width: fit-content;
+}
+
+.option-label {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.option-button {
+	display: inline-block;
+	background-color: #e0e0e0;
+	border: 10px solid #e0e0e0;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	vertical-align: middle;
+}
+
+.option-button.selected {
+	border: 10px solid #26a0da;
+}
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Custom Controls</title>
+
+		<!-- BASIC LAYOUT -->
+		<link href="./css/flex.css" rel="stylesheet" />
+		<link href="./css/flex-content.css" rel="stylesheet" />
+
+		<!-- jQUERY -->
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+		<!-- CUSTOM COMMON ITEMS -->
+		<link href="./custom-controls/common/common.css" rel="stylesheet" />
+
+		<!-- CUSTOM TABS -->
+		<link href="./custom-controls/tabs/tabs.css" rel="stylesheet" />
+		<script src="./custom-controls/tabs/tabs.js"></script>
+
+		<!-- CUSTOM GRADIENT BUTTONS -->
+		<link href="./custom-controls/gradient-button/gradient-button.css" rel="stylesheet" />
+
+		<!-- CUSTOM 3D BUTTONS -->
+		<link href="./custom-controls/threed-button/threed-button.css" rel="stylesheet" />
+
+		<!-- CUSTOM STATE BUTTONS -->
+		<link href="./custom-controls/state-button/state-button.css" rel="stylesheet" />
+		<script src="./custom-controls/state-button/state-button.js"></script>
+
+		<!-- CUSTOM OPTION BUTTONS -->
+		<link href="./custom-controls/option-button/option-button.css" rel="stylesheet" />
+		<script src="./custom-controls/option-button/option-button.js"></script>
+
+		<!-- CUSTOM FILTER LIST -->
+		<link href="./custom-controls/filter-list/filter-list.css" rel="stylesheet" />
+		<script src="./custom-controls/filter-list/filter-list.js"></script>
+
+		<!-- CUSTOM BACK-TO-TOP -->
+		<link href="./custom-controls/back-to-top/back-to-top.css" rel="stylesheet" />
+		<script src="./custom-controls/back-to-top/back-to-top.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="branding">Mabili Mentoring</div>
+			<nav>
+				<a href="./index.html">Nothing Happening Here</a>
+			</nav>
+		</header>
+
+		<main>
+			<h1>Custom Controls</h1>
+			<div class="content">
+
+				<div class="tabset">
+					<div class="tabs">
+						<ul>
+							<li class="tab-trigger active" data-tabset="tabset1" data-tab="tab1">Stuff</li>
+							<li class="tab-trigger" data-tabset="tabset1" data-tab="tab2">More Stuff</li>
+							<li class="tab-trigger" data-tabset="tabset1" data-tab="tab3">Other Stuff</li>
+						</ul>
+					</div>
+
+					<div class="tab-panes">
+
+						<div class="tab-pane active" data-tabset="tabset1" data-tab="tab1">
+							<h3>Basic Tab</h3>
+							<hr />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Cursus sit amet dictum sit amet justo donec enim. Duis convallis convallis tellus id interdum velit. Non nisi est sit amet facilisis magna etiam tempor orci. Vivamus at augue eget arcu dictum varius duis at consectetur. Morbi enim nunc faucibus a pellentesque sit. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Scelerisque viverra mauris in aliquam sem fringilla. Vitae suscipit tellus mauris a diam maecenas sed. Mauris in aliquam sem fringilla ut morbi. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Placerat in egestas erat imperdiet sed euismod nisi.</p>
+							<p>Ipsum a arcu cursus vitae congue mauris rhoncus aenean. Scelerisque varius morbi enim nunc. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In ornare quam viverra orci. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Netus et malesuada fames ac turpis. Mus mauris vitae ultricies leo. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Nisi porta lorem mollis aliquam ut porttitor leo a. Nulla aliquet enim tortor at auctor urna.</p>
+						</div>
+
+						<div class="tab-pane d-none" data-tabset="tabset1" data-tab="tab2">
+							<h3>Nog 'n Tab</h3>
+							<hr />
+							<h4>Gradient Button</h4>
+							<div class="gradient-button">Hover</div>
+							<br />
+							<hr />
+							<h4>3D Button</h4>
+							<div class="threed-button">Click Me</div>
+							<br />
+							<br />
+							<hr />
+							<h4>State Button</h4>
+							<div class="state-button"><span class="switch"></span></div>
+							<br />
+							<hr />
+							<h4>Option Buttons</h4>
+							<div class="optionset">
+								<div class="option-item" data-optionset="optionset1" data-option="option1">
+									<span class="option-button" data-optionset="optionset1" data-option="option1"></span>
+									<span class="option-label">Platinum</span>
+								</div>
+								<div class="option-item" data-optionset="optionset1" data-option="option2">
+									<span class="option-button" data-optionset="optionset1" data-option="option2"></span>
+									<span class="option-label">Gold</span>
+								</div>
+								<div class="option-item" data-optionset="optionset1" data-option="option3">
+									<span class="option-button" data-optionset="optionset1" data-option="option3"></span>
+									<span class="option-label">Silver</span>
+								</div>
+							</div>
+							<br />
+						</div>
+
+						<div class="tab-pane d-none" data-tabset="tabset1" data-tab="tab3">
+							<h3>Three tabs and a horse walk into a bar</h3>
+							<hr />
+							<h4>Live Search Filter</h4>
+							<div class="filter-list">
+								<input type="text" name="filter-input1" value="" placeholder="Search here..." class="filter-input" data-filtergroup="filtergroup1" />
+								<ul>
+									<li class="filter-item" data-filtergroup="filtergroup1">January</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">February</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">March</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">April</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">May</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">June</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">July</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">August</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">September</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">October</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">November</li>
+									<li class="filter-item" data-filtergroup="filtergroup1">December</li>
+								</ul>
+							</div>
+							<br />
+						</div>
+
+					</div> <!-- TAB PANES -->
+
+				</div> <!-- TABSET -->
+
+			</div> <!-- CONTENT -->
+		</main>
+
+		<!-- BACK-TO-TOP -->
+		<button type="button" class="back-to-top" id="btn-back-to-top">&#x25B2;</button>
+
+		<footer>
+			<p>&copy; Mabili, 2024</p>
+		</footer>
+	</body>
+</html>

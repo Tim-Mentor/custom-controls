@@ -1,0 +1,46 @@
+/* ### TABS ### */
+
+.tabset {
+	width: 50%;
+	margin: auto;
+}
+
+.tabs {
+	text-align: end;
+}
+
+.tabs ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tab-trigger {
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px 24px;
+	border: 1px solid #e0e0e0;
+	font-weight: 600;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.tab-trigger.active {
+	background-color: black;
+	color: white;
+	border: 1px solid black;
+}
+
+.tab-pane {
+	border: 1px solid #e0e0e0;
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	padding: 8px 32px;
+	min-height: 600px;
+}
+
+.tab-pane p {
+	text-align: justify;
+}
+
